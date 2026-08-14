@@ -2,7 +2,7 @@
 
 Period: 2026-05-19 through 2026-08-17
 
-Accounting basis: cash receipts and direct cash expenses, with earned-revenue explanation in the submission.
+Accounting basis: cash basis, as required by the official template. Revenue is recorded when cash is received and expenses when cash is paid.
 
 ## Monthly P&L inputs
 
@@ -33,7 +33,8 @@ Accounting basis: cash receipts and direct cash expenses, with earned-revenue ex
 - Revenue ledger: `agent/finance/transactions.csv`, settled revenue row dated 2026-07-23
 - Private payment evidence: `agent/treasury/evidence/argendon_payment_claim_20260723/image.png`
 - Corporate ID: `agent/treasury/formation_docs/articles_of_organization.pdf`
-- XPRIZE P&L template: https://docs.google.com/spreadsheets/d/1ILQTJaNwpO32KoPrS9kT7fhdv71aRwo3jn0e_cVS3JA/edit
+- XPRIZE P&L template: https://docs.google.com/spreadsheets/d/1pAJrEMo7_QID6V62sA4C8XwGBHkxDTVX3wtYNE2fulI/edit?usp=sharing
+- Downloaded original SHA-256: `47761637573c3c52646d1e1df6d23fc1fad818b4bb6e2e62409e6166a2e06bcf`
 
 ## Workbook controls to implement
 
@@ -43,4 +44,3 @@ Accounting basis: cash receipts and direct cash expenses, with earned-revenue ex
 - net income equals total revenue minus total expenses
 - marketing spend is shown separately even when zero
 - model status is PASS only when revenue, expense, and net-income checks reconcile to zero delta
-

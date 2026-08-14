@@ -11,8 +11,8 @@
 | Demo video under three minutes | Script, screen capture, captions, public video URL | pending |
 | Written narrative, 500 to 1,000 words | `submission/narrative.md` | drafted |
 | Revenue by month | July 2026 arms-length revenue of $99 | source verified and judge-ready PDF built |
-| Total expenses | direct cash expenses by month | source specification drafted |
-| Marketing spend | $0, stated separately | source specification drafted |
+| Total expenses | direct cash expenses by month | official template and verified cell map ready |
+| Marketing spend | $0, stated separately | official template and verified cell map ready |
 | Real users | one paying advertiser customer | verified, anonymized |
 | Related-party revenue | $0 | verified |
 | Product evidence | sponsor controller, fulfillment controller, live case study, logs | source inventory pending |
