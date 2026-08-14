@@ -8,7 +8,7 @@
 | Gemini API | Vertex AI Gemini model call in live service | pending credentials and deployment |
 | Production operation | Cloud Logging decision events and Cloud Run metrics | pending deployment |
 | Code repository | New SponsorOps repository with source, tests, license, and disclosures | public repository live and private mirror complete |
-| Demo video under three minutes | Script, screen capture, captions, public video URL | pending |
+| Demo video under three minutes | Script, screen capture, captions, public video URL | 133-second captioned draft verified; final requires live deployment |
 | Written narrative, 500 to 1,000 words | `submission/narrative.md` | drafted |
 | Revenue by month | July 2026 arms-length revenue of $99 | source verified and judge-ready PDF built |
 | Total expenses | direct cash expenses by month | official template and verified cell map ready |
