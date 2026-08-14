@@ -56,18 +56,13 @@ python -m unittest discover -s tests -v
 ## Deploy to Google Cloud Run
 
 ```bash
-gcloud services enable aiplatform.googleapis.com run.googleapis.com \
-  artifactregistry.googleapis.com cloudbuild.googleapis.com logging.googleapis.com
-gcloud artifacts repositories create sponsorops --repository-format=docker --location=us-central1
-gcloud builds submit --config cloudbuild.yaml \
-  --substitutions _IMAGE=us-central1-docker.pkg.dev/$GOOGLE_CLOUD_PROJECT/sponsorops/app:latest
-gcloud run deploy sponsorops \
-  --image us-central1-docker.pkg.dev/$GOOGLE_CLOUD_PROJECT/sponsorops/app:latest \
-  --region us-central1 --allow-unauthenticated \
-  --set-env-vars GOOGLE_CLOUD_PROJECT=$GOOGLE_CLOUD_PROJECT,GOOGLE_CLOUD_LOCATION=global,GEMINI_MODEL=gemini-2.5-flash
+export SPONSOROPS_GCP_PROJECT_ID=tinyops-sponsorops-2026
+./ops/deploy_gcp.sh
 ```
 
-The Cloud Run service account needs `roles/aiplatform.user`. Set `SPONSOROPS_API_KEY` for restricted judging access and lower `SPONSOROPS_HOURLY_LIMIT` if needed.
+The deployment script creates or reuses the project, attaches the only open billing account when one is available, enables the required APIs, creates a least-privilege runtime service account, builds the revision in Cloud Build, deploys it to Cloud Run, and makes one production Gemini decision. It stops if the result reports the deterministic demo model. Set `SPONSOROPS_BILLING_ACCOUNT_ID` when the Google account has more than one open billing account.
+
+The runtime service account receives `roles/aiplatform.user` and `roles/logging.logWriter`. Set `SPONSOROPS_API_KEY` for restricted judging access and lower `SPONSOROPS_HOURLY_LIMIT` if needed.
 
 ## Newness and pre-existing work
 
